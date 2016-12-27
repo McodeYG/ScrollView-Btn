@@ -7,8 +7,16 @@
 //
 
 #import "ViewController.h"
+#import "YGScrollView.h"
+#import "YGButton.h"
 
-@interface ViewController ()
+#define YG_SCREEN_W [UIScreen mainScreen].bounds.size.width
+#define YG_SCREEN_H [UIScreen mainScreen].bounds.size.height
+
+@interface ViewController ()<UIScrollViewDelegate>
+
+@property (nonatomic, strong) YGScrollView * ygScrollView;
+@property (nonatomic, strong) YGButton * ygbtn;
 
 @end
 
@@ -16,13 +24,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    
+    _ygScrollView = [[YGScrollView alloc]initWithFrame:self.view.frame];
+    _ygScrollView.contentSize = CGSizeMake(YG_SCREEN_W, 1.5*YG_SCREEN_H);
+    _ygScrollView.delegate = self;
+    _ygScrollView.backgroundColor = [UIColor cyanColor];
+    
+    [self.view addSubview:_ygScrollView];
+    
+    _ygbtn = [YGButton buttonWithType:(UIButtonTypeCustom)];
+    _ygbtn.frame = CGRectMake(100, 180, 100, 150);
+    [_ygbtn setBackgroundImage:[UIImage imageNamed:@"白色"] forState:(UIControlStateNormal)];
+    [_ygScrollView addSubview:_ygbtn];
+    
 }
 
 

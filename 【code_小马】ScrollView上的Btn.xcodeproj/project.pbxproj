@@ -15,6 +15,9 @@
 		17AF5A9A1E12AD09004B3977 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17AF5A981E12AD09004B3977 /* LaunchScreen.storyboard */; };
 		17AF5AA51E12AD09004B3977 /* _code____ScrollView__BtnTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AF5AA41E12AD09004B3977 /* _code____ScrollView__BtnTests.m */; };
 		17AF5AB01E12AD09004B3977 /* _code____ScrollView__BtnUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AF5AAF1E12AD09004B3977 /* _code____ScrollView__BtnUITests.m */; };
+		17AF5ABE1E12AD23004B3977 /* 白色.png in Resources */ = {isa = PBXBuildFile; fileRef = 17AF5ABD1E12AD23004B3977 /* 白色.png */; };
+		17AF5AC31E12AD3B004B3977 /* YGButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AF5AC01E12AD3B004B3977 /* YGButton.m */; };
+		17AF5AC41E12AD3B004B3977 /* YGScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AF5AC21E12AD3B004B3977 /* YGScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		17AF5AAB1E12AD09004B3977 /* 【code_小马】ScrollView上的BtnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "【code_小马】ScrollView上的BtnUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17AF5AAF1E12AD09004B3977 /* _code____ScrollView__BtnUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_code____ScrollView__BtnUITests.m"; sourceTree = "<group>"; };
 		17AF5AB11E12AD09004B3977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17AF5ABD1E12AD23004B3977 /* 白色.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "白色.png"; sourceTree = "<group>"; };
+		17AF5ABF1E12AD3B004B3977 /* YGButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGButton.h; sourceTree = "<group>"; };
+		17AF5AC01E12AD3B004B3977 /* YGButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGButton.m; sourceTree = "<group>"; };
+		17AF5AC11E12AD3B004B3977 /* YGScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGScrollView.h; sourceTree = "<group>"; };
+		17AF5AC21E12AD3B004B3977 /* YGScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +109,15 @@
 		17AF5A891E12AD09004B3977 /* 【code_小马】ScrollView上的Btn */ = {
 			isa = PBXGroup;
 			children = (
+				17AF5ABD1E12AD23004B3977 /* 白色.png */,
 				17AF5A8D1E12AD09004B3977 /* AppDelegate.h */,
 				17AF5A8E1E12AD09004B3977 /* AppDelegate.m */,
 				17AF5A901E12AD09004B3977 /* ViewController.h */,
 				17AF5A911E12AD09004B3977 /* ViewController.m */,
+				17AF5ABF1E12AD3B004B3977 /* YGButton.h */,
+				17AF5AC01E12AD3B004B3977 /* YGButton.m */,
+				17AF5AC11E12AD3B004B3977 /* YGScrollView.h */,
+				17AF5AC21E12AD3B004B3977 /* YGScrollView.m */,
 				17AF5A931E12AD09004B3977 /* Main.storyboard */,
 				17AF5A961E12AD09004B3977 /* Assets.xcassets */,
 				17AF5A981E12AD09004B3977 /* LaunchScreen.storyboard */,
@@ -249,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17AF5ABE1E12AD23004B3977 /* 白色.png in Resources */,
 				17AF5A9A1E12AD09004B3977 /* LaunchScreen.storyboard in Resources */,
 				17AF5A971E12AD09004B3977 /* Assets.xcassets in Resources */,
 				17AF5A951E12AD09004B3977 /* Main.storyboard in Resources */,
@@ -277,6 +291,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				17AF5A921E12AD09004B3977 /* ViewController.m in Sources */,
+				17AF5AC41E12AD3B004B3977 /* YGScrollView.m in Sources */,
+				17AF5AC31E12AD3B004B3977 /* YGButton.m in Sources */,
 				17AF5A8F1E12AD09004B3977 /* AppDelegate.m in Sources */,
 				17AF5A8C1E12AD09004B3977 /* main.m in Sources */,
 			);
